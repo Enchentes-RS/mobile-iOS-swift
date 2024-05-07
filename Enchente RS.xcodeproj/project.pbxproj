@@ -86,6 +86,7 @@
 		798361FA2BEAAB980058B4EE /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				D911471E2BE8263C00E5B6CD /* MapsViewController.swift */,
 				798361F72BEAAB780058B4EE /* MapView.swift */,
 			);
 			path = Map;
@@ -131,7 +132,6 @@
 				7922E8302BEAA2BA00BE6826 /* Enchente-RS-Info.plist */,
 				D91147372BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle */,
 				D911471A2BE8263C00E5B6CD /* EnchenteRSApp.swift */,
-				D911471E2BE8263C00E5B6CD /* MapsViewController.swift */,
 				D91147232BE8263D00E5B6CD /* Assets.xcassets */,
 				7922E82D2BEAA26500BE6826 /* Preview Content */,
 			);

@@ -12,6 +12,11 @@ import GooglePlaces
 @main
 struct EnchenteRSApp: App {
 
+    init() {
+        GMSServices.provideAPIKey("AIzaSyAwbYH61XG2oytqzMj0dhMQ8yNSvSxNAvI")
+        GMSPlacesClient.provideAPIKey("AIzaSyAwbYH61XG2oytqzMj0dhMQ8yNSvSxNAvI")
+    }
+
     var body: some Scene {
         WindowGroup {
             AppBody()
@@ -25,15 +30,20 @@ private struct AppBody: View {
 
     var body: some View {
         VStack(spacing: .zero) {
-            TabView(selection: $selection) {
-                MapView()
-                    .tag(0)
-
-                SignupView()
-                    .tag(1)
-
-                InformationView()
-                    .tag(2)
+            ZStack {
+                Rectangle()
+                    .fill(.clear)
+                
+                switch selection {
+                case 0:
+                    MapView()
+                case 1:
+                    SignupView()
+                case 2:
+                    InformationView()
+                default:
+                    fatalError("Index not supported")
+                }
             }
 
             MSTabBar(selection: $selection, items: [
@@ -50,12 +60,6 @@ private struct AppBody: View {
                     title: Text("Informações")
                 )
             ])
-        }
-        .onChange(of: scenePhase) {
-            if case .active = $0 {
-                GMSServices.provideAPIKey("AIzaSyAwbYH61XG2oytqzMj0dhMQ8yNSvSxNAvI")
-                GMSPlacesClient.provideAPIKey("AIzaSyAwbYH61XG2oytqzMj0dhMQ8yNSvSxNAvI")
-            }
         }
     }
 }
