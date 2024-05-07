@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Enchente RS
+//  Mapa Solidario
 //
 //  Created by Rodrigo Henrique Torres Cavalcanti on 05/05/24.
 //
@@ -40,7 +40,7 @@ class MapsViewController: UIViewController, GMSMapViewDelegate {
 
     func setupMark() {
         let marker = GMSMarker()
-        marker.icon = UIImage.donation
+//        marker.icon = UIImage(resource: <#T##ImageResource#>)
         marker.position = CLLocationCoordinate2D(latitude:  -30.0277, longitude: -51.2287)
         marker.title = "Porto Alegre"
         marker.snippet = "Rio Grande do Sul"

@@ -34,7 +34,7 @@ struct RSTabBar: View {
                         ZStack {
                             if offset == selection {
                                 Capsule()
-                                    .fill(.caribbeanGreen950)
+                                    .fill(Color.CaribbeanGreen._950)
                                     .frame(width: 64)
                             }
 
@@ -42,7 +42,7 @@ struct RSTabBar: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 24, height: 24)
-                                .foregroundColor(offset == selection ? .caribbeanGreen50 : .neutral)
+                                .foregroundColor(offset == selection ? Color.CaribbeanGreen._50 : Color.ColorNeutral.neutral)
                         }
                         .frame(height: 32)
 
@@ -50,13 +50,13 @@ struct RSTabBar: View {
                             .font(.caption.weight(offset == selection ? .bold : .medium))
                             .lineLimit(2)
                             .frame(height: 32, alignment: .top)
-                            .foregroundColor(offset == selection ? .tabViewTint : .neutral)
+                            .foregroundColor(offset == selection ? .tabViewTint : Color.ColorNeutral.neutral)
                     }
                     .frame(maxWidth: .infinity)
                 }
             }
         }
         .frame(height: 80)
-        .background(Color.caribbeanGreen50.ignoresSafeArea())
+        .background(Color.CaribbeanGreen._50.ignoresSafeArea())
     }
 }
