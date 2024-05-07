@@ -3,40 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D911471B2BE8263C00E5B6CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911471A2BE8263C00E5B6CD /* AppDelegate.swift */; };
-		D911471D2BE8263C00E5B6CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911471C2BE8263C00E5B6CD /* SceneDelegate.swift */; };
+		7922E82F2BEAA27800BE6826 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7922E82E2BEAA27800BE6826 /* Preview Assets.xcassets */; };
+		D911471B2BE8263C00E5B6CD /* EnchenteRSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911471A2BE8263C00E5B6CD /* EnchenteRSApp.swift */; };
 		D911471F2BE8263C00E5B6CD /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911471E2BE8263C00E5B6CD /* MapsViewController.swift */; };
-		D91147222BE8263C00E5B6CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91147202BE8263C00E5B6CD /* Main.storyboard */; };
 		D91147242BE8263D00E5B6CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91147232BE8263D00E5B6CD /* Assets.xcassets */; };
-		D91147272BE8263D00E5B6CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91147252BE8263D00E5B6CD /* LaunchScreen.storyboard */; };
 		D91147302BE8265300E5B6CD /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = D911472F2BE8265300E5B6CD /* GoogleMaps */; };
 		D91147322BE8265300E5B6CD /* GoogleMapsBase in Frameworks */ = {isa = PBXBuildFile; productRef = D91147312BE8265300E5B6CD /* GoogleMapsBase */; };
 		D91147342BE8265300E5B6CD /* GoogleMapsCore in Frameworks */ = {isa = PBXBuildFile; productRef = D91147332BE8265300E5B6CD /* GoogleMapsCore */; };
 		D91147362BE8265300E5B6CD /* GoogleMapsM4B in Frameworks */ = {isa = PBXBuildFile; productRef = D91147352BE8265300E5B6CD /* GoogleMapsM4B */; };
 		D91147382BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D91147372BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle */; };
-		D911473C2BE8296200E5B6CD /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473B2BE8296200E5B6CD /* TabBarViewController.swift */; };
-		D911473E2BE8299700E5B6CD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473D2BE8299700E5B6CD /* MenuViewController.swift */; };
+		D911473C2BE8296200E5B6CD /* RSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473B2BE8296200E5B6CD /* RSTabBar.swift */; };
+		D911473E2BE8299700E5B6CD /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473D2BE8299700E5B6CD /* SignupView.swift */; };
 		D91147412BE9221200E5B6CD /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = D91147402BE9221200E5B6CD /* GooglePlaces */; };
-		D91147432BE924BD00E5B6CD /* GooglePlacesPrivacy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D91147422BE924BD00E5B6CD /* GooglePlacesPrivacy.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7922E82E2BEAA27800BE6826 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7922E8302BEAA2BA00BE6826 /* Enchente-RS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Enchente-RS-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D91147172BE8263C00E5B6CD /* Enchente RS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Enchente RS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D911471A2BE8263C00E5B6CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D911471C2BE8263C00E5B6CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D911471A2BE8263C00E5B6CD /* EnchenteRSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnchenteRSApp.swift; sourceTree = "<group>"; };
 		D911471E2BE8263C00E5B6CD /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
-		D91147212BE8263C00E5B6CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D91147232BE8263D00E5B6CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D91147262BE8263D00E5B6CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D91147282BE8263D00E5B6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D91147372BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMapsPrivacy.bundle; sourceTree = "<group>"; };
-		D911473B2BE8296200E5B6CD /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		D911473D2BE8299700E5B6CD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		D91147422BE924BD00E5B6CD /* GooglePlacesPrivacy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlacesPrivacy.bundle; sourceTree = "<group>"; };
+		D911473B2BE8296200E5B6CD /* RSTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSTabBar.swift; sourceTree = "<group>"; };
+		D911473D2BE8299700E5B6CD /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7922E82D2BEAA26500BE6826 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7922E82E2BEAA27800BE6826 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		D911470E2BE8263C00E5B6CD = {
 			isa = PBXGroup;
 			children = (
@@ -74,17 +76,14 @@
 		D91147192BE8263C00E5B6CD /* Enchente RS */ = {
 			isa = PBXGroup;
 			children = (
-				D91147422BE924BD00E5B6CD /* GooglePlacesPrivacy.bundle */,
+				7922E8302BEAA2BA00BE6826 /* Enchente-RS-Info.plist */,
 				D91147372BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle */,
-				D911471A2BE8263C00E5B6CD /* AppDelegate.swift */,
-				D911473B2BE8296200E5B6CD /* TabBarViewController.swift */,
-				D911471C2BE8263C00E5B6CD /* SceneDelegate.swift */,
-				D911473D2BE8299700E5B6CD /* MenuViewController.swift */,
+				D911471A2BE8263C00E5B6CD /* EnchenteRSApp.swift */,
+				D911473B2BE8296200E5B6CD /* RSTabBar.swift */,
+				D911473D2BE8299700E5B6CD /* SignupView.swift */,
 				D911471E2BE8263C00E5B6CD /* MapsViewController.swift */,
-				D91147202BE8263C00E5B6CD /* Main.storyboard */,
 				D91147232BE8263D00E5B6CD /* Assets.xcassets */,
-				D91147252BE8263D00E5B6CD /* LaunchScreen.storyboard */,
-				D91147282BE8263D00E5B6CD /* Info.plist */,
+				7922E82D2BEAA26500BE6826 /* Preview Content */,
 			);
 			path = "Enchente RS";
 			sourceTree = "<group>";
@@ -132,7 +131,7 @@
 				};
 			};
 			buildConfigurationList = D91147122BE8263C00E5B6CD /* Build configuration list for PBXProject "Enchente RS" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -159,10 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91147382BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle in Resources */,
-				D91147272BE8263D00E5B6CD /* LaunchScreen.storyboard in Resources */,
+				7922E82F2BEAA27800BE6826 /* Preview Assets.xcassets in Resources */,
 				D91147242BE8263D00E5B6CD /* Assets.xcassets in Resources */,
-				D91147432BE924BD00E5B6CD /* GooglePlacesPrivacy.bundle in Resources */,
-				D91147222BE8263C00E5B6CD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,33 +171,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D911471F2BE8263C00E5B6CD /* MapsViewController.swift in Sources */,
-				D911473E2BE8299700E5B6CD /* MenuViewController.swift in Sources */,
-				D911473C2BE8296200E5B6CD /* TabBarViewController.swift in Sources */,
-				D911471B2BE8263C00E5B6CD /* AppDelegate.swift in Sources */,
-				D911471D2BE8263C00E5B6CD /* SceneDelegate.swift in Sources */,
+				D911473E2BE8299700E5B6CD /* SignupView.swift in Sources */,
+				D911473C2BE8296200E5B6CD /* RSTabBar.swift in Sources */,
+				D911471B2BE8263C00E5B6CD /* EnchenteRSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		D91147202BE8263C00E5B6CD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D91147212BE8263C00E5B6CD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D91147252BE8263D00E5B6CD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D91147262BE8263D00E5B6CD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D91147292BE8263D00E5B6CD /* Debug */ = {
@@ -210,7 +187,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++23";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -255,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -273,7 +250,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++23";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -312,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -329,16 +306,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "Enchente\\ RS/Preview\\ Content/Preview\\ Assets.xcassets";
 				DEVELOPMENT_TEAM = 2TN8HUUR4R;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Enchente RS/Info.plist";
+				INFOPLIST_FILE = "Enchente-RS-Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Para selecionar os pontos de referência";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,16 +334,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "Enchente\\ RS/Preview\\ Content/Preview\\ Assets.xcassets";
 				DEVELOPMENT_TEAM = 2TN8HUUR4R;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Enchente RS/Info.plist";
+				INFOPLIST_FILE = "Enchente-RS-Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Para selecionar os pontos de referência";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
