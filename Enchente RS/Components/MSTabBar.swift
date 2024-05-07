@@ -1,5 +1,5 @@
 //
-//  RSTabBar.swift
+//  MSTabBar.swift
 //  Enchente RS
 //
 //  Created by Rodrigo Henrique Torres Cavalcanti on 05/05/24.
@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-struct RSTabBarItem {
+struct MSTabBarItem {
 
     fileprivate let id = UUID()
     let image: Image
     let title: Text
 }
 
-struct RSTabBar: View {
+struct MSTabBar: View {
 
     @Binding var selection: Int
-    let items: [RSTabBarItem]
+    let items: [MSTabBarItem]
 
-    init(selection: Binding<Int>, items: [RSTabBarItem]) {
+    init(selection: Binding<Int>, items: [MSTabBarItem]) {
         self._selection = selection
         self.items = items
     }

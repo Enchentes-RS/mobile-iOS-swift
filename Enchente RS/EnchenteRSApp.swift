@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  EnchenteRSApp.swift
 //  Enchente RS
 //
 //  Created by Rodrigo Henrique Torres Cavalcanti on 05/05/24.
@@ -26,26 +26,26 @@ private struct AppBody: View {
     var body: some View {
         VStack(spacing: .zero) {
             TabView(selection: $selection) {
-                Text("Mapa")
+                MapView()
                     .tag(0)
 
-                Text("Cadastrar local")
+                SignupView()
                     .tag(1)
 
-                Text("Informações")
+                InformationView()
                     .tag(2)
             }
 
-            RSTabBar(selection: $selection, items: [
-                RSTabBarItem(
+            MSTabBar(selection: $selection, items: [
+                MSTabBarItem(
                     image: Image(.map),
                     title: Text("Mapa")
                 ),
-                RSTabBarItem(
+                MSTabBarItem(
                     image: Image(.pin),
                     title: Text("Cadastrar local")
                 ),
-                RSTabBarItem(
+                MSTabBarItem(
                     image: Image(.info),
                     title: Text("Informações")
                 )

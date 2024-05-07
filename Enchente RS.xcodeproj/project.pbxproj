@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7922E82F2BEAA27800BE6826 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7922E82E2BEAA27800BE6826 /* Preview Assets.xcassets */; };
+		798361F62BEAAB500058B4EE /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798361F52BEAAB500058B4EE /* InformationView.swift */; };
+		798361F82BEAAB780058B4EE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798361F72BEAAB780058B4EE /* MapView.swift */; };
 		D911471B2BE8263C00E5B6CD /* EnchenteRSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911471A2BE8263C00E5B6CD /* EnchenteRSApp.swift */; };
 		D911471F2BE8263C00E5B6CD /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911471E2BE8263C00E5B6CD /* MapsViewController.swift */; };
 		D91147242BE8263D00E5B6CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91147232BE8263D00E5B6CD /* Assets.xcassets */; };
@@ -16,26 +18,28 @@
 		D91147342BE8265300E5B6CD /* GoogleMapsCore in Frameworks */ = {isa = PBXBuildFile; productRef = D91147332BE8265300E5B6CD /* GoogleMapsCore */; };
 		D91147362BE8265300E5B6CD /* GoogleMapsM4B in Frameworks */ = {isa = PBXBuildFile; productRef = D91147352BE8265300E5B6CD /* GoogleMapsM4B */; };
 		D91147382BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D91147372BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle */; };
-		D911473C2BE8296200E5B6CD /* RSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473B2BE8296200E5B6CD /* RSTabBar.swift */; };
+		D911473C2BE8296200E5B6CD /* MSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473B2BE8296200E5B6CD /* MSTabBar.swift */; };
 		D911473E2BE8299700E5B6CD /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473D2BE8299700E5B6CD /* SignupView.swift */; };
 		D91147412BE9221200E5B6CD /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = D91147402BE9221200E5B6CD /* GooglePlaces */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		7922E82E2BEAA27800BE6826 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7922E8302BEAA2BA00BE6826 /* Enchente-RS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Enchente-RS-Info.plist"; sourceTree = SOURCE_ROOT; };
-		D91147172BE8263C00E5B6CD /* Enchente RS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Enchente RS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D911471A2BE8263C00E5B6CD /* EnchenteRSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnchenteRSApp.swift; sourceTree = "<group>"; };
 		D9F3ADE92BEA73F80001A490 /* MSRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F3ADE82BEA73F80001A490 /* MSRadioButton.swift */; };
 		D9F3ADEB2BEA75900001A490 /* DynamicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F3ADEA2BEA75900001A490 /* DynamicButton.swift */; };
 		D9F3ADED2BEA78F60001A490 /* MSCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F3ADEC2BEA78F60001A490 /* MSCheckButton.swift */; };
 		D9F3ADEF2BEA871E0001A490 /* MSInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F3ADEE2BEA871E0001A490 /* MSInput.swift */; };
 		D9F3ADF12BEA8E3F0001A490 /* MSButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F3ADF02BEA8E3F0001A490 /* MSButtom.swift */; };
 		D9F3ADFB2BEA94E80001A490 /* MSTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F3ADFA2BEA94E80001A490 /* MSTextEditor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7922E82E2BEAA27800BE6826 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7922E8302BEAA2BA00BE6826 /* Enchente-RS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Enchente-RS-Info.plist"; sourceTree = SOURCE_ROOT; };
+		798361F52BEAAB500058B4EE /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		798361F72BEAAB780058B4EE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D91147172BE8263C00E5B6CD /* Enchente RS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Enchente RS.app"; path = "Mapa Solidário.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D911471A2BE8263C00E5B6CD /* EnchenteRSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnchenteRSApp.swift; sourceTree = "<group>"; };
 		D911471E2BE8263C00E5B6CD /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		D91147232BE8263D00E5B6CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D91147372BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMapsPrivacy.bundle; sourceTree = "<group>"; };
-		D911473B2BE8296200E5B6CD /* RSTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSTabBar.swift; sourceTree = "<group>"; };
+		D911473B2BE8296200E5B6CD /* MSTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTabBar.swift; sourceTree = "<group>"; };
 		D911473D2BE8299700E5B6CD /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		D9F3ADE82BEA73F80001A490 /* MSRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSRadioButton.swift; sourceTree = "<group>"; };
 		D9F3ADEA2BEA75900001A490 /* DynamicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicButton.swift; sourceTree = "<group>"; };
@@ -69,6 +73,40 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		798361F92BEAAB900058B4EE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				798361FC2BEAABA40058B4EE /* Information */,
+				798361FB2BEAAB9D0058B4EE /* Signup */,
+				798361FA2BEAAB980058B4EE /* Map */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		798361FA2BEAAB980058B4EE /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				798361F72BEAAB780058B4EE /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		798361FB2BEAAB9D0058B4EE /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				D911473D2BE8299700E5B6CD /* SignupView.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		798361FC2BEAABA40058B4EE /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				798361F52BEAAB500058B4EE /* InformationView.swift */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
 		D911470E2BE8263C00E5B6CD = {
 			isa = PBXGroup;
 			children = (
@@ -80,7 +118,7 @@
 		D91147182BE8263C00E5B6CD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D91147172BE8263C00E5B6CD /* Mapa Solidário.app */,
+				D91147172BE8263C00E5B6CD /* Enchente RS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,12 +126,11 @@
 		D91147192BE8263C00E5B6CD /* Enchente RS */ = {
 			isa = PBXGroup;
 			children = (
+				798361F92BEAAB900058B4EE /* Scenes */,
 				D98F51232BEA5E3800923C97 /* Components */,
 				7922E8302BEAA2BA00BE6826 /* Enchente-RS-Info.plist */,
 				D91147372BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle */,
 				D911471A2BE8263C00E5B6CD /* EnchenteRSApp.swift */,
-				D911473B2BE8296200E5B6CD /* RSTabBar.swift */,
-				D911473D2BE8299700E5B6CD /* SignupView.swift */,
 				D911471E2BE8263C00E5B6CD /* MapsViewController.swift */,
 				D91147232BE8263D00E5B6CD /* Assets.xcassets */,
 				7922E82D2BEAA26500BE6826 /* Preview Content */,
@@ -104,6 +141,7 @@
 		D98F51232BEA5E3800923C97 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D911473B2BE8296200E5B6CD /* MSTabBar.swift */,
 				D9F3ADF02BEA8E3F0001A490 /* MSButtom.swift */,
 				D9F3ADE82BEA73F80001A490 /* MSRadioButton.swift */,
 				D9F3ADEA2BEA75900001A490 /* DynamicButton.swift */,
@@ -138,7 +176,7 @@
 				D91147402BE9221200E5B6CD /* GooglePlaces */,
 			);
 			productName = "Enchente RS";
-			productReference = D91147172BE8263C00E5B6CD /* Mapa Solidário.app */;
+			productReference = D91147172BE8263C00E5B6CD /* Enchente RS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -197,8 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D911471F2BE8263C00E5B6CD /* MapsViewController.swift in Sources */,
+				798361F82BEAAB780058B4EE /* MapView.swift in Sources */,
+				798361F62BEAAB500058B4EE /* InformationView.swift in Sources */,
 				D911473E2BE8299700E5B6CD /* SignupView.swift in Sources */,
-				D911473C2BE8296200E5B6CD /* RSTabBar.swift in Sources */,
+				D911473C2BE8296200E5B6CD /* MSTabBar.swift in Sources */,
 				D911471B2BE8263C00E5B6CD /* EnchenteRSApp.swift in Sources */,
 				D9F3ADEF2BEA871E0001A490 /* MSInput.swift in Sources */,
 				D9F3ADED2BEA78F60001A490 /* MSCheckButton.swift in Sources */,
