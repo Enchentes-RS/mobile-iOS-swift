@@ -9,20 +9,23 @@ import SwiftUI
 
 @MainActor
 public struct MSInput: View {
-
+    
     // MARK: - Properties
     @Binding var text: String
     private let placeholder: String?
-
+    private let title: String?
+    
     // MARK: - Inits
     public init(
-        _ placeholder: String? = nil,
+        title: String? = nil,
+        placeholder: String? = nil,
         text: Binding<String>
     ) {
+        self.title = title
         self.placeholder = placeholder
         self._text = text
     }
-
+    
     public var body: some View {
         Group {
             VStack(spacing: 8) {
@@ -35,10 +38,10 @@ public struct MSInput: View {
                                     .foregroundColor(.black)
                                     .lineLimit(1)
                                     .multilineTextAlignment(.leading)
-
+                                
                             }
-
-                            TextField(placeholder!, text: $text)
+                            
+                            TextField(placeholder ?? "", text: $text)
                                 .padding(12)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .background(Color.white)
@@ -47,7 +50,7 @@ public struct MSInput: View {
                                     RoundedRectangle(cornerRadius: 6)
                                         .inset(by: -0.5)
                                         .stroke(Color(red: 0.41, green: 0.41, blue: 0.41), lineWidth: 1)
-
+                                    
                                 )
                         }
                     }
@@ -62,25 +65,12 @@ public struct MSInput: View {
 }
 
 // MARK: - Previews
-struct HavanInput_Previews: PreviewProvider {
-
-    static var previews: some View {
-        VStack(spacing: 12) {
-            MSInput(
-                "Lorem Ipsum",
-                text: .constant("")
-            )
-
-            MSInput(
-                "Lorem Ipsum",
-                text: .constant("")
-            )
-
-            MSInput(
-                "Lorem Ipsum",
-                text: .constant("Lorem Ipsum")
-            )
-        }
-        .padding()
+#Preview {
+    VStack(spacing: 12) {
+        MSInput(
+            title: "Lorem Ipsum",
+            text: .constant("")
+        )
     }
+    .padding()
 }

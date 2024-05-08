@@ -8,12 +8,12 @@
 import SwiftUI
 
 public struct MSRadioButton: View {
-
+    
     @Binding var isSelected: Bool
     private let text: String
-
+    
     // MARK: - Life Cycle
-
+    
     public init(
         _ text: String = "",
         isSelected: Binding<Bool>
@@ -21,17 +21,17 @@ public struct MSRadioButton: View {
         self.text = text
         self._isSelected = isSelected
     }
-
+    
     public var body: some View {
         DynamicButton($isSelected) {
             let isSelected = $0 || isSelected
-
+            
             HStack(spacing: 12) {
                 ZStack {
                     Circle()
                         .fill(.white)
                         .animation(.easeInOut(duration: 0.15), value: isSelected)
-
+                    
                     if isSelected {
                         Circle()
                             .fill(Color.CaribbeanGreen._700)
@@ -50,7 +50,7 @@ public struct MSRadioButton: View {
                             lineWidth: 2
                         )
                 )
-
+                
                 if !text.isEmpty {
                     Text(text)
                         .foregroundColor(.black)
@@ -64,20 +64,19 @@ public struct MSRadioButton: View {
 }
 
 // MARK: - Preview
-struct HavanRadioButton_Previews: PreviewProvider {
-    static var previews: some View {
-        VStack {
-            MSRadioButton(
-                "Hello World",
-                isSelected: .constant(false)
-            )
-            .padding()
-
-            MSRadioButton(
-                "Hello World",
-                isSelected: .constant(true)
-            )
-            .padding()
-        }
+#Preview {
+    VStack {
+        MSRadioButton(
+            "Hello World",
+            isSelected: .constant(false)
+        )
+        .padding()
+        
+        MSRadioButton(
+            "Hello World",
+            isSelected: .constant(true)
+        )
+        .padding()
     }
 }
+
