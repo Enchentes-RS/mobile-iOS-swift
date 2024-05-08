@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B8124732BEA6DAE0009CDBB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8124722BEA6DAE0009CDBB /* Service.swift */; };
-		1B8124752BEA702D0009CDBB /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8124742BEA702D0009CDBB /* HTTPClient.swift */; };
-		1B81247A2BEA7BB60009CDBB /* Shelter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8124792BEA7BB60009CDBB /* Shelter.swift */; };
-		7922E82F2BEAA27800BE6826 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7922E82E2BEAA27800BE6826 /* Preview Assets.xcassets */; };
+		1BDD77B32BEC0FC90085E312 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD77AE2BEC0FC90085E312 /* HTTPClient.swift */; };
+		1BDD77B42BEC0FC90085E312 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD77AF2BEC0FC90085E312 /* Service.swift */; };
+		1BDD77B52BEC0FC90085E312 /* Shelter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD77B12BEC0FC90085E312 /* Shelter.swift */; };
 		798361F62BEAAB500058B4EE /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798361F52BEAAB500058B4EE /* InformationView.swift */; };
 		798361F82BEAAB780058B4EE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798361F72BEAAB780058B4EE /* MapView.swift */; };
 		D911471B2BE8263C00E5B6CD /* EnchenteRSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911471A2BE8263C00E5B6CD /* EnchenteRSApp.swift */; };
@@ -34,11 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B8124722BEA6DAE0009CDBB /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		1B8124742BEA702D0009CDBB /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		1B8124792BEA7BB60009CDBB /* Shelter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shelter.swift; sourceTree = "<group>"; };
-		D91147172BE8263C00E5B6CD /* Enchente RS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Enchente RS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7922E82E2BEAA27800BE6826 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1BDD77AE2BEC0FC90085E312 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		1BDD77AF2BEC0FC90085E312 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		1BDD77B12BEC0FC90085E312 /* Shelter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shelter.swift; sourceTree = "<group>"; };
 		7922E8302BEAA2BA00BE6826 /* Enchente-RS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Enchente-RS-Info.plist"; sourceTree = SOURCE_ROOT; };
 		798361F52BEAAB500058B4EE /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		798361F72BEAAB780058B4EE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -74,30 +71,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B8124712BEA6DA10009CDBB /* Service */ = {
+		1BDD77B02BEC0FC90085E312 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				1B8124722BEA6DAE0009CDBB /* Service.swift */,
-				1B8124742BEA702D0009CDBB /* HTTPClient.swift */,
+				1BDD77AE2BEC0FC90085E312 /* HTTPClient.swift */,
+				1BDD77AF2BEC0FC90085E312 /* Service.swift */,
 			);
-			path = Service;
-			sourceTree = "<group>";
+			name = Service;
+			path = "Enchente RS/Service";
+			sourceTree = SOURCE_ROOT;
 		};
-		1B8124762BEA728C0009CDBB /* Model */ = {
+		1BDD77B22BEC0FC90085E312 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1B8124792BEA7BB60009CDBB /* Shelter.swift */,
+				1BDD77B12BEC0FC90085E312 /* Shelter.swift */,
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		7922E82D2BEAA26500BE6826 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				7922E82E2BEAA27800BE6826 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
+			name = Model;
+			path = "Enchente RS/Model";
+			sourceTree = SOURCE_ROOT;
 		};
 		798361F92BEAAB900058B4EE /* Scenes */ = {
 			isa = PBXGroup;
@@ -153,9 +144,8 @@
 		D91147192BE8263C00E5B6CD /* MapaSolidario */ = {
 			isa = PBXGroup;
 			children = (
-				1B8124762BEA728C0009CDBB /* Model */,
-				1B8124712BEA6DA10009CDBB /* Service */,
-				D91147422BE924BD00E5B6CD /* GooglePlacesPrivacy.bundle */,
+				1BDD77B22BEC0FC90085E312 /* Model */,
+				1BDD77B02BEC0FC90085E312 /* Service */,
 				D9C6AD6F2BEB142100966DCA /* Preview Content */,
 				798361F92BEAAB900058B4EE /* Scenes */,
 				D98F51232BEA5E3800923C97 /* Components */,
@@ -271,19 +261,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				D911471F2BE8263C00E5B6CD /* MapsViewController.swift in Sources */,
-				D911473C2BE8296200E5B6CD /* TabBarViewController.swift in Sources */,
-				1B8124752BEA702D0009CDBB /* HTTPClient.swift in Sources */,
-				1B81247A2BEA7BB60009CDBB /* Shelter.swift in Sources */,
-				1B8124732BEA6DAE0009CDBB /* Service.swift in Sources */,
+				D911473C2BE8296200E5B6CD /* MSTabBar.swift in Sources */,
 				798361F82BEAAB780058B4EE /* MapView.swift in Sources */,
 				798361F62BEAAB500058B4EE /* InformationView.swift in Sources */,
 				D911473E2BE8299700E5B6CD /* SignupView.swift in Sources */,
 				D911473C2BE8296200E5B6CD /* MSTabBar.swift in Sources */,
 				D911471B2BE8263C00E5B6CD /* EnchenteRSApp.swift in Sources */,
+				1BDD77B42BEC0FC90085E312 /* Service.swift in Sources */,
+				1BDD77B52BEC0FC90085E312 /* Shelter.swift in Sources */,
 				D9F3ADEF2BEA871E0001A490 /* MSInput.swift in Sources */,
 				D9CA88CB2BEB1152005B9C34 /* MSAccordion.swift in Sources */,
 				D9F3ADED2BEA78F60001A490 /* MSCheckButton.swift in Sources */,
 				D9F3ADE92BEA73F80001A490 /* MSRadioButton.swift in Sources */,
+				1BDD77B32BEC0FC90085E312 /* HTTPClient.swift in Sources */,
 				D9F3ADEB2BEA75900001A490 /* DynamicButton.swift in Sources */,
 				D9F3ADF12BEA8E3F0001A490 /* MSButtom.swift in Sources */,
 				D9F3ADFB2BEA94E80001A490 /* MSTextEditor.swift in Sources */,
