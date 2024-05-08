@@ -32,7 +32,6 @@ final class ShelterService: Service {
         let request = URLRequest(url: URL(string: Self.endpoint)!)
         
         return self.client.perform(for: request)
-            .print()
             .receive(on: DispatchQueue.main)
             .subscribe(on: DispatchQueue.global(qos: .background))
             .tryMap({ data, response in
@@ -44,7 +43,6 @@ final class ShelterService: Service {
                 return data
             })
             .decode(type: [Shelter].self, decoder: JSONDecoder())
-            .print()
             .eraseToAnyPublisher()
     }
 }
