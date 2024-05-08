@@ -54,7 +54,7 @@ public struct MSRadioButton: View {
                 if !text.isEmpty {
                     Text(text)
                         .foregroundColor(.black)
-                        .font(.caption)
+                        .font(.subheadline)
                         .lineLimit(nil)
                         .multilineTextAlignment(.leading)
                 }
