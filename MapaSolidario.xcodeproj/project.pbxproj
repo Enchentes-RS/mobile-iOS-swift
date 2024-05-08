@@ -24,6 +24,7 @@
 		D911473C2BE8296200E5B6CD /* MSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473B2BE8296200E5B6CD /* MSTabBar.swift */; };
 		D911473E2BE8299700E5B6CD /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473D2BE8299700E5B6CD /* SignupView.swift */; };
 		D91147412BE9221200E5B6CD /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = D91147402BE9221200E5B6CD /* GooglePlaces */; };
+		D9CA88CB2BEB1152005B9C34 /* MSAccordion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CA88CA2BEB1152005B9C34 /* MSAccordion.swift */; };
 		D9F3ADE92BEA73F80001A490 /* MSRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F3ADE82BEA73F80001A490 /* MSRadioButton.swift */; };
 		D9F3ADEB2BEA75900001A490 /* DynamicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F3ADEA2BEA75900001A490 /* DynamicButton.swift */; };
 		D9F3ADED2BEA78F60001A490 /* MSCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F3ADEC2BEA78F60001A490 /* MSCheckButton.swift */; };
@@ -41,13 +42,14 @@
 		7922E8302BEAA2BA00BE6826 /* Enchente-RS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Enchente-RS-Info.plist"; sourceTree = SOURCE_ROOT; };
 		798361F52BEAAB500058B4EE /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		798361F72BEAAB780058B4EE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		D91147172BE8263C00E5B6CD /* Enchente RS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Enchente RS.app"; path = "Mapa Solidário.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D91147172BE8263C00E5B6CD /* Mapa Solidário.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mapa Solidário.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D911471A2BE8263C00E5B6CD /* EnchenteRSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnchenteRSApp.swift; sourceTree = "<group>"; };
 		D911471E2BE8263C00E5B6CD /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		D91147232BE8263D00E5B6CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D91147372BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMapsPrivacy.bundle; sourceTree = "<group>"; };
 		D911473B2BE8296200E5B6CD /* MSTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTabBar.swift; sourceTree = "<group>"; };
 		D911473D2BE8299700E5B6CD /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		D9CA88CA2BEB1152005B9C34 /* MSAccordion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSAccordion.swift; sourceTree = "<group>"; };
 		D9F3ADE82BEA73F80001A490 /* MSRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSRadioButton.swift; sourceTree = "<group>"; };
 		D9F3ADEA2BEA75900001A490 /* DynamicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicButton.swift; sourceTree = "<group>"; };
 		D9F3ADEC2BEA78F60001A490 /* MSCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSCheckButton.swift; sourceTree = "<group>"; };
@@ -135,7 +137,7 @@
 		D911470E2BE8263C00E5B6CD = {
 			isa = PBXGroup;
 			children = (
-				D91147192BE8263C00E5B6CD /* Enchente RS */,
+				D91147192BE8263C00E5B6CD /* MapaSolidario */,
 				D91147182BE8263C00E5B6CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,31 +145,32 @@
 		D91147182BE8263C00E5B6CD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D91147172BE8263C00E5B6CD /* Enchente RS.app */,
+				D91147172BE8263C00E5B6CD /* Mapa Solidário.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D91147192BE8263C00E5B6CD /* Enchente RS */ = {
+		D91147192BE8263C00E5B6CD /* MapaSolidario */ = {
 			isa = PBXGroup;
 			children = (
 				1B8124762BEA728C0009CDBB /* Model */,
 				1B8124712BEA6DA10009CDBB /* Service */,
 				D91147422BE924BD00E5B6CD /* GooglePlacesPrivacy.bundle */,
+				D9C6AD6F2BEB142100966DCA /* Preview Content */,
 				798361F92BEAAB900058B4EE /* Scenes */,
 				D98F51232BEA5E3800923C97 /* Components */,
 				7922E8302BEAA2BA00BE6826 /* Enchente-RS-Info.plist */,
 				D91147372BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle */,
 				D911471A2BE8263C00E5B6CD /* EnchenteRSApp.swift */,
 				D91147232BE8263D00E5B6CD /* Assets.xcassets */,
-				7922E82D2BEAA26500BE6826 /* Preview Content */,
 			);
-			path = "Enchente RS";
+			path = MapaSolidario;
 			sourceTree = "<group>";
 		};
 		D98F51232BEA5E3800923C97 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D9CA88CA2BEB1152005B9C34 /* MSAccordion.swift */,
 				D911473B2BE8296200E5B6CD /* MSTabBar.swift */,
 				D9F3ADF02BEA8E3F0001A490 /* MSButtom.swift */,
 				D9F3ADE82BEA73F80001A490 /* MSRadioButton.swift */,
@@ -177,6 +180,13 @@
 				D9F3ADFA2BEA94E80001A490 /* MSTextEditor.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		D9C6AD6F2BEB142100966DCA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +212,8 @@
 				D91147352BE8265300E5B6CD /* GoogleMapsM4B */,
 				D91147402BE9221200E5B6CD /* GooglePlaces */,
 			);
-			productName = "Enchente RS";
-			productReference = D91147172BE8263C00E5B6CD /* Enchente RS.app */;
+			productName = MapaSolidario;
+			productReference = D91147172BE8263C00E5B6CD /* Mapa Solidário.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -221,7 +231,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D91147122BE8263C00E5B6CD /* Build configuration list for PBXProject "Enchente RS" */;
+			buildConfigurationList = D91147122BE8263C00E5B6CD /* Build configuration list for PBXProject "MapaSolidario" */;
 			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -249,7 +259,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91147382BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle in Resources */,
-				7922E82F2BEAA27800BE6826 /* Preview Assets.xcassets in Resources */,
 				D91147242BE8263D00E5B6CD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +281,7 @@
 				D911473C2BE8296200E5B6CD /* MSTabBar.swift in Sources */,
 				D911471B2BE8263C00E5B6CD /* EnchenteRSApp.swift in Sources */,
 				D9F3ADEF2BEA871E0001A490 /* MSInput.swift in Sources */,
+				D9CA88CB2BEB1152005B9C34 /* MSAccordion.swift in Sources */,
 				D9F3ADED2BEA78F60001A490 /* MSCheckButton.swift in Sources */,
 				D9F3ADE92BEA73F80001A490 /* MSRadioButton.swift in Sources */,
 				D9F3ADEB2BEA75900001A490 /* DynamicButton.swift in Sources */,
@@ -409,7 +419,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "Enchente\\ RS/Preview\\ Content/Preview\\ Assets.xcassets";
+				DEVELOPMENT_ASSET_PATHS = "\"MapaSolidario/Preview Content/Preview Assets.xcassets\"";
 				DEVELOPMENT_TEAM = 2TN8HUUR4R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Enchente-RS-Info.plist";
@@ -417,12 +427,13 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapasolidario;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mapasolidario;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -437,7 +448,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "Enchente\\ RS/Preview\\ Content/Preview\\ Assets.xcassets";
+				DEVELOPMENT_ASSET_PATHS = "\"MapaSolidario/Preview Content/Preview Assets.xcassets\"";
 				DEVELOPMENT_TEAM = 2TN8HUUR4R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Enchente-RS-Info.plist";
@@ -445,12 +456,13 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapasolidario;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mapasolidario;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -461,7 +473,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D91147122BE8263C00E5B6CD /* Build configuration list for PBXProject "Enchente RS" */ = {
+		D91147122BE8263C00E5B6CD /* Build configuration list for PBXProject "MapaSolidario" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D91147292BE8263D00E5B6CD /* Debug */,
