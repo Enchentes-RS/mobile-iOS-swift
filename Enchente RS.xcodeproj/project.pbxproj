@@ -3,28 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1B8124732BEA6DAE0009CDBB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8124722BEA6DAE0009CDBB /* Service.swift */; };
 		1B8124752BEA702D0009CDBB /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8124742BEA702D0009CDBB /* HTTPClient.swift */; };
 		1B81247A2BEA7BB60009CDBB /* Shelter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8124792BEA7BB60009CDBB /* Shelter.swift */; };
-		D911471B2BE8263C00E5B6CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911471A2BE8263C00E5B6CD /* AppDelegate.swift */; };
-		D911471D2BE8263C00E5B6CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911471C2BE8263C00E5B6CD /* SceneDelegate.swift */; };
+		7922E82F2BEAA27800BE6826 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7922E82E2BEAA27800BE6826 /* Preview Assets.xcassets */; };
+		798361F62BEAAB500058B4EE /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798361F52BEAAB500058B4EE /* InformationView.swift */; };
+		798361F82BEAAB780058B4EE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798361F72BEAAB780058B4EE /* MapView.swift */; };
+		D911471B2BE8263C00E5B6CD /* EnchenteRSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911471A2BE8263C00E5B6CD /* EnchenteRSApp.swift */; };
 		D911471F2BE8263C00E5B6CD /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911471E2BE8263C00E5B6CD /* MapsViewController.swift */; };
-		D91147222BE8263C00E5B6CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91147202BE8263C00E5B6CD /* Main.storyboard */; };
 		D91147242BE8263D00E5B6CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91147232BE8263D00E5B6CD /* Assets.xcassets */; };
-		D91147272BE8263D00E5B6CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91147252BE8263D00E5B6CD /* LaunchScreen.storyboard */; };
 		D91147302BE8265300E5B6CD /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = D911472F2BE8265300E5B6CD /* GoogleMaps */; };
 		D91147322BE8265300E5B6CD /* GoogleMapsBase in Frameworks */ = {isa = PBXBuildFile; productRef = D91147312BE8265300E5B6CD /* GoogleMapsBase */; };
 		D91147342BE8265300E5B6CD /* GoogleMapsCore in Frameworks */ = {isa = PBXBuildFile; productRef = D91147332BE8265300E5B6CD /* GoogleMapsCore */; };
 		D91147362BE8265300E5B6CD /* GoogleMapsM4B in Frameworks */ = {isa = PBXBuildFile; productRef = D91147352BE8265300E5B6CD /* GoogleMapsM4B */; };
 		D91147382BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D91147372BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle */; };
-		D911473C2BE8296200E5B6CD /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473B2BE8296200E5B6CD /* TabBarViewController.swift */; };
-		D911473E2BE8299700E5B6CD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473D2BE8299700E5B6CD /* MenuViewController.swift */; };
+		D911473C2BE8296200E5B6CD /* MSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473B2BE8296200E5B6CD /* MSTabBar.swift */; };
+		D911473E2BE8299700E5B6CD /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473D2BE8299700E5B6CD /* SignupView.swift */; };
 		D91147412BE9221200E5B6CD /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = D91147402BE9221200E5B6CD /* GooglePlaces */; };
-		D91147432BE924BD00E5B6CD /* GooglePlacesPrivacy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D91147422BE924BD00E5B6CD /* GooglePlacesPrivacy.bundle */; };
+		D9F3ADE92BEA73F80001A490 /* MSRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F3ADE82BEA73F80001A490 /* MSRadioButton.swift */; };
+		D9F3ADEB2BEA75900001A490 /* DynamicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F3ADEA2BEA75900001A490 /* DynamicButton.swift */; };
+		D9F3ADED2BEA78F60001A490 /* MSCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F3ADEC2BEA78F60001A490 /* MSCheckButton.swift */; };
+		D9F3ADEF2BEA871E0001A490 /* MSInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F3ADEE2BEA871E0001A490 /* MSInput.swift */; };
+		D9F3ADF12BEA8E3F0001A490 /* MSButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F3ADF02BEA8E3F0001A490 /* MSButtom.swift */; };
+		D9F3ADFB2BEA94E80001A490 /* MSTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F3ADFA2BEA94E80001A490 /* MSTextEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,17 +37,23 @@
 		1B8124742BEA702D0009CDBB /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		1B8124792BEA7BB60009CDBB /* Shelter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shelter.swift; sourceTree = "<group>"; };
 		D91147172BE8263C00E5B6CD /* Enchente RS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Enchente RS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D911471A2BE8263C00E5B6CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D911471C2BE8263C00E5B6CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7922E82E2BEAA27800BE6826 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7922E8302BEAA2BA00BE6826 /* Enchente-RS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Enchente-RS-Info.plist"; sourceTree = SOURCE_ROOT; };
+		798361F52BEAAB500058B4EE /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		798361F72BEAAB780058B4EE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D91147172BE8263C00E5B6CD /* Enchente RS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Enchente RS.app"; path = "Mapa Solidário.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D911471A2BE8263C00E5B6CD /* EnchenteRSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnchenteRSApp.swift; sourceTree = "<group>"; };
 		D911471E2BE8263C00E5B6CD /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
-		D91147212BE8263C00E5B6CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D91147232BE8263D00E5B6CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D91147262BE8263D00E5B6CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D91147282BE8263D00E5B6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D91147372BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMapsPrivacy.bundle; sourceTree = "<group>"; };
-		D911473B2BE8296200E5B6CD /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		D911473D2BE8299700E5B6CD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		D91147422BE924BD00E5B6CD /* GooglePlacesPrivacy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlacesPrivacy.bundle; sourceTree = "<group>"; };
+		D911473B2BE8296200E5B6CD /* MSTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTabBar.swift; sourceTree = "<group>"; };
+		D911473D2BE8299700E5B6CD /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		D9F3ADE82BEA73F80001A490 /* MSRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSRadioButton.swift; sourceTree = "<group>"; };
+		D9F3ADEA2BEA75900001A490 /* DynamicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicButton.swift; sourceTree = "<group>"; };
+		D9F3ADEC2BEA78F60001A490 /* MSCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSCheckButton.swift; sourceTree = "<group>"; };
+		D9F3ADEE2BEA871E0001A490 /* MSInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSInput.swift; sourceTree = "<group>"; };
+		D9F3ADF02BEA8E3F0001A490 /* MSButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSButtom.swift; sourceTree = "<group>"; };
+		D9F3ADFA2BEA94E80001A490 /* MSTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTextEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +89,49 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		7922E82D2BEAA26500BE6826 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7922E82E2BEAA27800BE6826 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		798361F92BEAAB900058B4EE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				798361FC2BEAABA40058B4EE /* Information */,
+				798361FB2BEAAB9D0058B4EE /* Signup */,
+				798361FA2BEAAB980058B4EE /* Map */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		798361FA2BEAAB980058B4EE /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D911471E2BE8263C00E5B6CD /* MapsViewController.swift */,
+				798361F72BEAAB780058B4EE /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		798361FB2BEAAB9D0058B4EE /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				D911473D2BE8299700E5B6CD /* SignupView.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		798361FC2BEAABA40058B4EE /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				798361F52BEAAB500058B4EE /* InformationView.swift */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
 		D911470E2BE8263C00E5B6CD = {
 			isa = PBXGroup;
 			children = (
@@ -100,26 +154,37 @@
 				1B8124762BEA728C0009CDBB /* Model */,
 				1B8124712BEA6DA10009CDBB /* Service */,
 				D91147422BE924BD00E5B6CD /* GooglePlacesPrivacy.bundle */,
+				798361F92BEAAB900058B4EE /* Scenes */,
+				D98F51232BEA5E3800923C97 /* Components */,
+				7922E8302BEAA2BA00BE6826 /* Enchente-RS-Info.plist */,
 				D91147372BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle */,
-				D911471A2BE8263C00E5B6CD /* AppDelegate.swift */,
-				D911473B2BE8296200E5B6CD /* TabBarViewController.swift */,
-				D911471C2BE8263C00E5B6CD /* SceneDelegate.swift */,
-				D911473D2BE8299700E5B6CD /* MenuViewController.swift */,
-				D911471E2BE8263C00E5B6CD /* MapsViewController.swift */,
-				D91147202BE8263C00E5B6CD /* Main.storyboard */,
+				D911471A2BE8263C00E5B6CD /* EnchenteRSApp.swift */,
 				D91147232BE8263D00E5B6CD /* Assets.xcassets */,
-				D91147252BE8263D00E5B6CD /* LaunchScreen.storyboard */,
-				D91147282BE8263D00E5B6CD /* Info.plist */,
+				7922E82D2BEAA26500BE6826 /* Preview Content */,
 			);
 			path = "Enchente RS";
+			sourceTree = "<group>";
+		};
+		D98F51232BEA5E3800923C97 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D911473B2BE8296200E5B6CD /* MSTabBar.swift */,
+				D9F3ADF02BEA8E3F0001A490 /* MSButtom.swift */,
+				D9F3ADE82BEA73F80001A490 /* MSRadioButton.swift */,
+				D9F3ADEA2BEA75900001A490 /* DynamicButton.swift */,
+				D9F3ADEC2BEA78F60001A490 /* MSCheckButton.swift */,
+				D9F3ADEE2BEA871E0001A490 /* MSInput.swift */,
+				D9F3ADFA2BEA94E80001A490 /* MSTextEditor.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D91147162BE8263C00E5B6CD /* Enchente RS */ = {
+		D91147162BE8263C00E5B6CD /* Mapa Solidário */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D911472B2BE8263D00E5B6CD /* Build configuration list for PBXNativeTarget "Enchente RS" */;
+			buildConfigurationList = D911472B2BE8263D00E5B6CD /* Build configuration list for PBXNativeTarget "Mapa Solidário" */;
 			buildPhases = (
 				D91147132BE8263C00E5B6CD /* Sources */,
 				D91147142BE8263C00E5B6CD /* Frameworks */,
@@ -129,7 +194,7 @@
 			);
 			dependencies = (
 			);
-			name = "Enchente RS";
+			name = "Mapa Solidário";
 			packageProductDependencies = (
 				D911472F2BE8265300E5B6CD /* GoogleMaps */,
 				D91147312BE8265300E5B6CD /* GoogleMapsBase */,
@@ -157,7 +222,7 @@
 				};
 			};
 			buildConfigurationList = D91147122BE8263C00E5B6CD /* Build configuration list for PBXProject "Enchente RS" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -173,7 +238,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D91147162BE8263C00E5B6CD /* Enchente RS */,
+				D91147162BE8263C00E5B6CD /* Mapa Solidário */,
 			);
 		};
 /* End PBXProject section */
@@ -184,10 +249,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91147382BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle in Resources */,
-				D91147272BE8263D00E5B6CD /* LaunchScreen.storyboard in Resources */,
+				7922E82F2BEAA27800BE6826 /* Preview Assets.xcassets in Resources */,
 				D91147242BE8263D00E5B6CD /* Assets.xcassets in Resources */,
-				D91147432BE924BD00E5B6CD /* GooglePlacesPrivacy.bundle in Resources */,
-				D91147222BE8263C00E5B6CD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,36 +262,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				D911471F2BE8263C00E5B6CD /* MapsViewController.swift in Sources */,
-				D911473E2BE8299700E5B6CD /* MenuViewController.swift in Sources */,
 				D911473C2BE8296200E5B6CD /* TabBarViewController.swift in Sources */,
 				1B8124752BEA702D0009CDBB /* HTTPClient.swift in Sources */,
-				D911471B2BE8263C00E5B6CD /* AppDelegate.swift in Sources */,
-				D911471D2BE8263C00E5B6CD /* SceneDelegate.swift in Sources */,
 				1B81247A2BEA7BB60009CDBB /* Shelter.swift in Sources */,
 				1B8124732BEA6DAE0009CDBB /* Service.swift in Sources */,
+				798361F82BEAAB780058B4EE /* MapView.swift in Sources */,
+				798361F62BEAAB500058B4EE /* InformationView.swift in Sources */,
+				D911473E2BE8299700E5B6CD /* SignupView.swift in Sources */,
+				D911473C2BE8296200E5B6CD /* MSTabBar.swift in Sources */,
+				D911471B2BE8263C00E5B6CD /* EnchenteRSApp.swift in Sources */,
+				D9F3ADEF2BEA871E0001A490 /* MSInput.swift in Sources */,
+				D9F3ADED2BEA78F60001A490 /* MSCheckButton.swift in Sources */,
+				D9F3ADE92BEA73F80001A490 /* MSRadioButton.swift in Sources */,
+				D9F3ADEB2BEA75900001A490 /* DynamicButton.swift in Sources */,
+				D9F3ADF12BEA8E3F0001A490 /* MSButtom.swift in Sources */,
+				D9F3ADFB2BEA94E80001A490 /* MSTextEditor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		D91147202BE8263C00E5B6CD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D91147212BE8263C00E5B6CD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D91147252BE8263D00E5B6CD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D91147262BE8263D00E5B6CD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D91147292BE8263D00E5B6CD /* Debug */ = {
@@ -238,7 +290,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++23";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -283,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -301,7 +353,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++23";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -340,7 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -357,22 +409,20 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "Enchente\\ RS/Preview\\ Content/Preview\\ Assets.xcassets";
 				DEVELOPMENT_TEAM = 2TN8HUUR4R;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Enchente RS/Info.plist";
+				INFOPLIST_FILE = "Enchente-RS-Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Para selecionar os pontos de referência";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.enchentes.Enchente-RS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mapasolidario;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -387,22 +437,20 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "Enchente\\ RS/Preview\\ Content/Preview\\ Assets.xcassets";
 				DEVELOPMENT_TEAM = 2TN8HUUR4R;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Enchente RS/Info.plist";
+				INFOPLIST_FILE = "Enchente-RS-Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Para selecionar os pontos de referência";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.enchentes.Enchente-RS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mapasolidario;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -422,7 +470,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D911472B2BE8263D00E5B6CD /* Build configuration list for PBXNativeTarget "Enchente RS" */ = {
+		D911472B2BE8263D00E5B6CD /* Build configuration list for PBXNativeTarget "Mapa Solidário" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D911472C2BE8263D00E5B6CD /* Debug */,
