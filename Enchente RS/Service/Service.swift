@@ -11,33 +11,40 @@ import Combine
 protocol Service {
     associatedtype Client
     
+    static var endpoint: String { get }
     var client: Client { get set }
     
     func fetchShelters() -> AnyPublisher<[Shelter], Error>
 }
 
-class ShelterService: Service {
+final class ShelterService: Service {
     typealias Client = HTTPClient
     
+    static var endpoint: String = "https://api.mapasolidario.com.br/locals"
+    
     var client: Client
-    var subscriptions = Set<AnyCancellable>()
     
     init(client: Client = URLSession.shared) {
         self.client = client
     }
     
     func fetchShelters() -> AnyPublisher<[Shelter], any Error> {
-        let request = URLRequest(url: URL(string: "http://185.139.1.231:3000/locals")!)
+        let request = URLRequest(url: URL(string: Self.endpoint)!)
         
         return self.client.perform(for: request)
             .print()
             .receive(on: DispatchQueue.main)
             .subscribe(on: DispatchQueue.global(qos: .background))
-            .map(\.data)
+            .tryMap({ data, response in
+                guard let response = response as? HTTPURLResponse,
+                      response.statusCode == 200 else {
+                    throw NSError(domain: "Error while trying to map data", code: 99)
+                }
+                
+                return data
+            })
             .decode(type: [Shelter].self, decoder: JSONDecoder())
             .print()
             .eraseToAnyPublisher()
     }
-    
-    
 }

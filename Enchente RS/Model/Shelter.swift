@@ -23,17 +23,35 @@ struct Shelter: Codable {
         case id = "_id"
         case name
         case cep
+        case address
+        case latitude
+        case longitude
+        case volunteers
+        case donations
         case cnpj
         case pointType
         case contactPerson
         case additionalNotes
+        case whatsApp = "whatsappGroup"
+        case needsList
+        case surplusList
+        case pix
     }
     
     var id: String
     var name: String
     var cep: String
-    var cnpj: String
-    var pointType: PointType
+    var address: String?
+    var latitude: Double?
+    var longitude: Double?
+    var volunteers: String?
+    var donations: String?
+    var cnpj: String?
+    var pointType: String
     var contactPerson: String
-    var additionalNotes: String
+    var additionalNotes: String?
+    var whatsApp: String?
+    var needsList: String?
+    var surplusList: String?
+    var pix: String?
 }

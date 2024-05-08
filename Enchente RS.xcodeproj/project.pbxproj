@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1B8124732BEA6DAE0009CDBB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8124722BEA6DAE0009CDBB /* Service.swift */; };
 		1B8124752BEA702D0009CDBB /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8124742BEA702D0009CDBB /* HTTPClient.swift */; };
-		1B8124782BEA72A00009CDBB /* GeoPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8124772BEA72A00009CDBB /* GeoPoint.swift */; };
 		1B81247A2BEA7BB60009CDBB /* Shelter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8124792BEA7BB60009CDBB /* Shelter.swift */; };
 		D911471B2BE8263C00E5B6CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911471A2BE8263C00E5B6CD /* AppDelegate.swift */; };
 		D911471D2BE8263C00E5B6CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911471C2BE8263C00E5B6CD /* SceneDelegate.swift */; };
@@ -31,7 +30,6 @@
 /* Begin PBXFileReference section */
 		1B8124722BEA6DAE0009CDBB /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		1B8124742BEA702D0009CDBB /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		1B8124772BEA72A00009CDBB /* GeoPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoPoint.swift; sourceTree = "<group>"; };
 		1B8124792BEA7BB60009CDBB /* Shelter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shelter.swift; sourceTree = "<group>"; };
 		D91147172BE8263C00E5B6CD /* Enchente RS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Enchente RS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D911471A2BE8263C00E5B6CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 		1B8124762BEA728C0009CDBB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1B8124772BEA72A00009CDBB /* GeoPoint.swift */,
 				1B8124792BEA7BB60009CDBB /* Shelter.swift */,
 			);
 			path = Model;
@@ -207,7 +204,6 @@
 				1B8124752BEA702D0009CDBB /* HTTPClient.swift in Sources */,
 				D911471B2BE8263C00E5B6CD /* AppDelegate.swift in Sources */,
 				D911471D2BE8263C00E5B6CD /* SceneDelegate.swift in Sources */,
-				1B8124782BEA72A00009CDBB /* GeoPoint.swift in Sources */,
 				1B81247A2BEA7BB60009CDBB /* Shelter.swift in Sources */,
 				1B8124732BEA6DAE0009CDBB /* Service.swift in Sources */,
 			);
