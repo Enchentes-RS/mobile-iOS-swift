@@ -28,8 +28,8 @@ public struct MSInput: View {
 
     public var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            if let placeholder {
-                Text(placeholder)
+            if let title {
+                Text(title)
                     .font(.headline)
                     .foregroundColor(.black)
                     .lineLimit(1)

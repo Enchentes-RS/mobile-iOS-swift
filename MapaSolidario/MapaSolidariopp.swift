@@ -31,6 +31,7 @@ struct MapaSolidarioRSApp: App {
     var body: some Scene {
         WindowGroup {
             AppBody()
+                .preferredColorScheme(.light) 
         }
     }
 }

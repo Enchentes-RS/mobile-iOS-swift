@@ -29,6 +29,8 @@
 		D91915102BED106100EFE818 /* MSTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D919150F2BED106100EFE818 /* MSTagView.swift */; };
 		D91915122BED24A500EFE818 /* ShelterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91915112BED24A500EFE818 /* ShelterDetailsView.swift */; };
 		D91915142BED29B400EFE818 /* InformationWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91915132BED29B400EFE818 /* InformationWebView.swift */; };
+		D960F4B42BED521E006346F4 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D960F4B32BED521E006346F4 /* SignupViewModel.swift */; };
+		D960F4B62BED5272006346F4 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D960F4B52BED5272006346F4 /* SignupModel.swift */; };
 		D9CA88CB2BEB1152005B9C34 /* MSAccordion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CA88CA2BEB1152005B9C34 /* MSAccordion.swift */; };
 		D9D48D692BEC179C0079E14E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D9D48D682BEC179C0079E14E /* FirebaseAnalytics */; };
 		D9D48D6B2BEC179C0079E14E /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D9D48D6A2BEC179C0079E14E /* FirebaseAnalyticsSwift */; };
@@ -78,6 +80,8 @@
 		D919150F2BED106100EFE818 /* MSTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTagView.swift; sourceTree = "<group>"; };
 		D91915112BED24A500EFE818 /* ShelterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelterDetailsView.swift; sourceTree = "<group>"; };
 		D91915132BED29B400EFE818 /* InformationWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationWebView.swift; sourceTree = "<group>"; };
+		D960F4B32BED521E006346F4 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		D960F4B52BED5272006346F4 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
 		D9CA88CA2BEB1152005B9C34 /* MSAccordion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSAccordion.swift; sourceTree = "<group>"; };
 		D9D48D672BEC13190079E14E /* Mapa Solidário.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Mapa Solidário.entitlements"; sourceTree = "<group>"; };
 		D9E8C6002BEBB04C0063515C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				D911473D2BE8299700E5B6CD /* SignupView.swift */,
+				D960F4B32BED521E006346F4 /* SignupViewModel.swift */,
+				D960F4B52BED5272006346F4 /* SignupModel.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -383,7 +389,9 @@
 				D911473E2BE8299700E5B6CD /* SignupView.swift in Sources */,
 				D911471B2BE8263C00E5B6CD /* MapaSolidariopp.swift in Sources */,
 				D91915122BED24A500EFE818 /* ShelterDetailsView.swift in Sources */,
+				D960F4B42BED521E006346F4 /* SignupViewModel.swift in Sources */,
 				79D39A002BEC509800AE19A3 /* MapItem.swift in Sources */,
+				D960F4B62BED5272006346F4 /* SignupModel.swift in Sources */,
 				D919150E2BED0DC600EFE818 /* MSCardView.swift in Sources */,
 				D919150C2BECFE1300EFE818 /* Shelter.swift in Sources */,
 				D9F3ADEF2BEA871E0001A490 /* MSInput.swift in Sources */,
@@ -533,6 +541,7 @@
 				DEVELOPMENT_TEAM = 2TN8HUUR4R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MapaSolidario-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Para selecionar os pontos de referência";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -568,6 +577,7 @@
 				DEVELOPMENT_TEAM = 2TN8HUUR4R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MapaSolidario-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Para selecionar os pontos de referência";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

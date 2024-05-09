@@ -31,7 +31,8 @@ public struct MSButton: View {
                 .lineLimit(1)
                 .minimumScaleFactor(0.5)
                 .padding(.horizontal, 24)
-                .frame(maxWidth: .infinity, maxHeight: 48)
+                .frame(height: 56)
+                .frame(maxWidth: .infinity)
                 .background(type.backgroundColor)
                 .clipShape(RoundedRectangle(cornerRadius: 6))
         }
