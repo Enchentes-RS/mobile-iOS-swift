@@ -12,6 +12,9 @@
 		1BDD77B52BEC0FC90085E312 /* Shelter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD77B12BEC0FC90085E312 /* Shelter.swift */; };
 		798361F62BEAAB500058B4EE /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798361F52BEAAB500058B4EE /* InformationView.swift */; };
 		798361F82BEAAB780058B4EE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798361F72BEAAB780058B4EE /* MapView.swift */; };
+		79D399FE2BEC3DD000AE19A3 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D399FD2BEC3DD000AE19A3 /* MapViewModel.swift */; };
+		79D39A002BEC509800AE19A3 /* MapItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D399FF2BEC509800AE19A3 /* MapItem.swift */; };
+		79D39A012BEC516300AE19A3 /* MSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473B2BE8296200E5B6CD /* MSTabBar.swift */; };
 		D911471B2BE8263C00E5B6CD /* EnchenteRSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911471A2BE8263C00E5B6CD /* EnchenteRSApp.swift */; };
 		D911471F2BE8263C00E5B6CD /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911471E2BE8263C00E5B6CD /* MapsViewController.swift */; };
 		D91147242BE8263D00E5B6CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91147232BE8263D00E5B6CD /* Assets.xcassets */; };
@@ -20,7 +23,6 @@
 		D91147342BE8265300E5B6CD /* GoogleMapsCore in Frameworks */ = {isa = PBXBuildFile; productRef = D91147332BE8265300E5B6CD /* GoogleMapsCore */; };
 		D91147362BE8265300E5B6CD /* GoogleMapsM4B in Frameworks */ = {isa = PBXBuildFile; productRef = D91147352BE8265300E5B6CD /* GoogleMapsM4B */; };
 		D91147382BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D91147372BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle */; };
-		D911473C2BE8296200E5B6CD /* MSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473B2BE8296200E5B6CD /* MSTabBar.swift */; };
 		D911473E2BE8299700E5B6CD /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473D2BE8299700E5B6CD /* SignupView.swift */; };
 		D91147412BE9221200E5B6CD /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = D91147402BE9221200E5B6CD /* GooglePlaces */; };
 		D9CA88CB2BEB1152005B9C34 /* MSAccordion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CA88CA2BEB1152005B9C34 /* MSAccordion.swift */; };
@@ -39,6 +41,8 @@
 		7922E8302BEAA2BA00BE6826 /* Enchente-RS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Enchente-RS-Info.plist"; sourceTree = SOURCE_ROOT; };
 		798361F52BEAAB500058B4EE /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		798361F72BEAAB780058B4EE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		79D399FD2BEC3DD000AE19A3 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		79D399FF2BEC509800AE19A3 /* MapItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapItem.swift; sourceTree = "<group>"; };
 		D91147172BE8263C00E5B6CD /* Mapa Solidário.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mapa Solidário.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D911471A2BE8263C00E5B6CD /* EnchenteRSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnchenteRSApp.swift; sourceTree = "<group>"; };
 		D911471E2BE8263C00E5B6CD /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 			children = (
 				D911471E2BE8263C00E5B6CD /* MapsViewController.swift */,
 				798361F72BEAAB780058B4EE /* MapView.swift */,
+				79D399FD2BEC3DD000AE19A3 /* MapViewModel.swift */,
+				79D399FF2BEC509800AE19A3 /* MapItem.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -261,22 +267,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				D911471F2BE8263C00E5B6CD /* MapsViewController.swift in Sources */,
-				D911473C2BE8296200E5B6CD /* MSTabBar.swift in Sources */,
 				798361F82BEAAB780058B4EE /* MapView.swift in Sources */,
 				798361F62BEAAB500058B4EE /* InformationView.swift in Sources */,
 				D911473E2BE8299700E5B6CD /* SignupView.swift in Sources */,
-				D911473C2BE8296200E5B6CD /* MSTabBar.swift in Sources */,
 				D911471B2BE8263C00E5B6CD /* EnchenteRSApp.swift in Sources */,
 				1BDD77B42BEC0FC90085E312 /* Service.swift in Sources */,
 				1BDD77B52BEC0FC90085E312 /* Shelter.swift in Sources */,
+				79D39A002BEC509800AE19A3 /* MapItem.swift in Sources */,
 				D9F3ADEF2BEA871E0001A490 /* MSInput.swift in Sources */,
 				D9CA88CB2BEB1152005B9C34 /* MSAccordion.swift in Sources */,
 				D9F3ADED2BEA78F60001A490 /* MSCheckButton.swift in Sources */,
+				79D39A012BEC516300AE19A3 /* MSTabBar.swift in Sources */,
 				D9F3ADE92BEA73F80001A490 /* MSRadioButton.swift in Sources */,
 				1BDD77B32BEC0FC90085E312 /* HTTPClient.swift in Sources */,
 				D9F3ADEB2BEA75900001A490 /* DynamicButton.swift in Sources */,
 				D9F3ADF12BEA8E3F0001A490 /* MSButtom.swift in Sources */,
 				D9F3ADFB2BEA94E80001A490 /* MSTextEditor.swift in Sources */,
+				79D399FE2BEC3DD000AE19A3 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

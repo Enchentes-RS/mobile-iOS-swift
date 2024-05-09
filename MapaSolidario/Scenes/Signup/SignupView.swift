@@ -97,7 +97,7 @@ struct SignupView: View {
             }
             .padding(.horizontal, 16)
         }
-        .background(Color.CaribbeanGreen.background)
+        .background(Color.CaribbeanGreen.background.ignoresSafeArea())
     }
 }
 

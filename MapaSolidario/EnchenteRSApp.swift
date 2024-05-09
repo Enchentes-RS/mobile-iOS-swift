@@ -15,6 +15,8 @@ struct EnchenteRSApp: App {
     init() {
         GMSServices.provideAPIKey("AIzaSyAwbYH61XG2oytqzMj0dhMQ8yNSvSxNAvI")
         GMSPlacesClient.provideAPIKey("AIzaSyAwbYH61XG2oytqzMj0dhMQ8yNSvSxNAvI")
+
+        UITabBar.appearance().isHidden = true
     }
 
     var body: some Scene {
@@ -27,6 +29,7 @@ struct EnchenteRSApp: App {
 private struct AppBody: View {
     @Environment(\.scenePhase) var scenePhase
     @State var selection = 0
+    @State var shownIndex = Set<Int>()
 
     var body: some View {
         VStack(spacing: .zero) {
@@ -34,15 +37,15 @@ private struct AppBody: View {
                 Rectangle()
                     .fill(.clear)
                 
-                switch selection {
-                case 0:
+                TabView(selection: $selection) {
                     MapView()
-                case 1:
+                        .tag(0)
+
                     SignupView()
-                case 2:
+                        .tag(1)
+
                     InformationView()
-                default:
-                    fatalError("Index not supported")
+                        .tag(2)
                 }
             }
 
