@@ -39,7 +39,6 @@ final class ShelterService: Service {
                       response.statusCode == 200 else {
                     throw NSError(domain: "Error while trying to map data", code: 99)
                 }
-                
                 return data
             })
             .decode(type: [Shelter].self, decoder: JSONDecoder())

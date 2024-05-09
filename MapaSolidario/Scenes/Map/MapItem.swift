@@ -28,12 +28,12 @@ struct MapItem {
         self.marker.icon = Self.icon(shelter.pointType)
     }
 
-    static func icon(_ type: String) -> UIImage? {
+    static func icon(_ type: PointType) -> UIImage? {
         switch type {
-        case "donations":
-            return .Pin.donation
-        case "shelters":
-            return .Pin.shelter
+        case .donations:
+            return .donation
+        case .volunteers:
+            return .shelter
         default:
             return nil
         }
