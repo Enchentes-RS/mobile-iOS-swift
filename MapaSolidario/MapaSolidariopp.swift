@@ -22,22 +22,16 @@ struct MapaSolidarioRSApp: App {
         FirebaseApp.configure()
 
         Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
-          AnalyticsParameterItemID: "id-\("teste!")",
-          AnalyticsParameterItemName: "teste2",
-          AnalyticsParameterContentType: "cont",
+            AnalyticsParameterItemName: "Abriu APP",
         ])
 
-        Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
-                  AnalyticsParameterItemID: "id-\("teste!")",
-                  AnalyticsParameterItemName: "teste2",
-                  AnalyticsParameterContentType: "cont",
-                ])
-        setupRemoteConfig()
+        UITabBar.appearance().isHidden = true
     }
 
     var body: some Scene {
         WindowGroup {
             AppBody()
+                .preferredColorScheme(.light) 
         }
     }
 }
@@ -46,22 +40,29 @@ private struct AppBody: View {
     @Environment(\.scenePhase) var scenePhase
     @State var selection = 0
     var remoteConfig = RemoteConfig.remoteConfig()
-    @RemoteConfigProperty(key:"exibir_cadastrar_local", fallback: true) private var isSignupViewEnabled: Bool
+    //    @RemoteConfigProperty(key:"exibir_cadastrar_local", fallback: true) private var isSignupViewEnabled: Bool
 
     var body: some View {
         VStack(spacing: .zero) {
             ZStack {
                 Rectangle()
                     .fill(.clear)
-                switch selection {
-                case 0:
+
+                TabView(selection: $selection) {
                     MapView()
-                case 1:
+                        .tag(0)
+
                     SignupView()
-                case 2:
-                    InformationView()
-                default:
-                    fatalError("Index not supported")
+                        .tag(1)
+
+                    InformationWebView()
+                        .tag(2)
+                }
+                .onChange(of: selection) { selection in
+                    Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
+                        AnalyticsParameterItemName: "Abas",
+                        AnalyticsParameterContentType: "Aba: \(selection)",
+                    ])
                 }
             }
 
@@ -70,43 +71,15 @@ private struct AppBody: View {
                     image: Image(.map),
                     title: Text("Mapa")
                 ),
-                isSignupViewEnabled ?
-                    MSTabBarItem(
-                        image: Image(.pin),
-                        title: Text("Cadastrar local")
-                    ): nil,
+                MSTabBarItem(
+                    image: Image(.pin),
+                    title: Text("Cadastrar local")
+                ),
                 MSTabBarItem(
                     image: Image(.info),
                     title: Text("Informações")
                 )
-            ].compactMap { $0 }
-            )
-        }
-        .onAppear {
-            remoteConfig.fetchAndActivate()
-        }
-    }
-}
-
-extension MapaSolidarioRSApp {
-
-    class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate {
-        // Implemente os métodos necessários da UNUserNotificationCenterDelegate
-    }
-
-    func setupRemoteConfig() {
-        var remoteConfig = RemoteConfig.remoteConfig()
-        remoteConfig.setDefaults(["exibir_cadastrar_local": true as NSObject])
-
-        let settings = RemoteConfigSettings()
-        settings.minimumFetchInterval = 0
-        remoteConfig.configSettings = settings
-
-        remoteConfig.fetch(withExpirationDuration: 0) {
-            status, error in
-            if status == .success, error == nil {
-                let value = remoteConfig.configValue(forKey: "exibir_cadastrar_local").boolValue
-            }
+            ])
         }
     }
 }

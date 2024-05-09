@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BDD77B32BEC0FC90085E312 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD77AE2BEC0FC90085E312 /* HTTPClient.swift */; };
-		1BDD77B42BEC0FC90085E312 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD77AF2BEC0FC90085E312 /* Service.swift */; };
-		1BDD77B52BEC0FC90085E312 /* Shelter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD77B12BEC0FC90085E312 /* Shelter.swift */; };
 		798361F62BEAAB500058B4EE /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798361F52BEAAB500058B4EE /* InformationView.swift */; };
 		798361F82BEAAB780058B4EE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798361F72BEAAB780058B4EE /* MapView.swift */; };
+		79D399FE2BEC3DD000AE19A3 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D399FD2BEC3DD000AE19A3 /* MapViewModel.swift */; };
+		79D39A002BEC509800AE19A3 /* MapItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D399FF2BEC509800AE19A3 /* MapItem.swift */; };
+		79D39A012BEC516300AE19A3 /* MSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473B2BE8296200E5B6CD /* MSTabBar.swift */; };
 		D911471B2BE8263C00E5B6CD /* MapaSolidariopp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911471A2BE8263C00E5B6CD /* MapaSolidariopp.swift */; };
 		D911471F2BE8263C00E5B6CD /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911471E2BE8263C00E5B6CD /* MapsViewController.swift */; };
 		D91147242BE8263D00E5B6CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91147232BE8263D00E5B6CD /* Assets.xcassets */; };
@@ -20,9 +20,17 @@
 		D91147342BE8265300E5B6CD /* GoogleMapsCore in Frameworks */ = {isa = PBXBuildFile; productRef = D91147332BE8265300E5B6CD /* GoogleMapsCore */; };
 		D91147362BE8265300E5B6CD /* GoogleMapsM4B in Frameworks */ = {isa = PBXBuildFile; productRef = D91147352BE8265300E5B6CD /* GoogleMapsM4B */; };
 		D91147382BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D91147372BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle */; };
-		D911473C2BE8296200E5B6CD /* MSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473B2BE8296200E5B6CD /* MSTabBar.swift */; };
 		D911473E2BE8299700E5B6CD /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911473D2BE8299700E5B6CD /* SignupView.swift */; };
 		D91147412BE9221200E5B6CD /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = D91147402BE9221200E5B6CD /* GooglePlaces */; };
+		D919150A2BECFE1300EFE818 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91915062BECFE1300EFE818 /* Service.swift */; };
+		D919150B2BECFE1300EFE818 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91915072BECFE1300EFE818 /* HTTPClient.swift */; };
+		D919150C2BECFE1300EFE818 /* Shelter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91915092BECFE1300EFE818 /* Shelter.swift */; };
+		D919150E2BED0DC600EFE818 /* MSCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D919150D2BED0DC600EFE818 /* MSCardView.swift */; };
+		D91915102BED106100EFE818 /* MSTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D919150F2BED106100EFE818 /* MSTagView.swift */; };
+		D91915122BED24A500EFE818 /* ShelterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91915112BED24A500EFE818 /* ShelterDetailsView.swift */; };
+		D91915142BED29B400EFE818 /* InformationWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91915132BED29B400EFE818 /* InformationWebView.swift */; };
+		D960F4B42BED521E006346F4 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D960F4B32BED521E006346F4 /* SignupViewModel.swift */; };
+		D960F4B62BED5272006346F4 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D960F4B52BED5272006346F4 /* SignupModel.swift */; };
 		D9CA88CB2BEB1152005B9C34 /* MSAccordion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CA88CA2BEB1152005B9C34 /* MSAccordion.swift */; };
 		D9D48D692BEC179C0079E14E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D9D48D682BEC179C0079E14E /* FirebaseAnalytics */; };
 		D9D48D6B2BEC179C0079E14E /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D9D48D6A2BEC179C0079E14E /* FirebaseAnalyticsSwift */; };
@@ -53,12 +61,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1BDD77B12BEC0FC90085E312 /* Shelter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shelter.swift; sourceTree = "<group>"; };
-		1BDD77AF2BEC0FC90085E312 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		1BDD77AE2BEC0FC90085E312 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		7922E8302BEAA2BA00BE6826 /* MapaSolidario-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MapaSolidario-Info.plist"; sourceTree = SOURCE_ROOT; };
 		798361F52BEAAB500058B4EE /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		798361F72BEAAB780058B4EE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		79D399FD2BEC3DD000AE19A3 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		79D399FF2BEC509800AE19A3 /* MapItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapItem.swift; sourceTree = "<group>"; };
 		D91147172BE8263C00E5B6CD /* Mapa Solidário.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mapa Solidário.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D911471A2BE8263C00E5B6CD /* MapaSolidariopp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaSolidariopp.swift; sourceTree = "<group>"; };
 		D911471E2BE8263C00E5B6CD /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +73,15 @@
 		D91147372BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMapsPrivacy.bundle; sourceTree = "<group>"; };
 		D911473B2BE8296200E5B6CD /* MSTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTabBar.swift; sourceTree = "<group>"; };
 		D911473D2BE8299700E5B6CD /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		D91915062BECFE1300EFE818 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		D91915072BECFE1300EFE818 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		D91915092BECFE1300EFE818 /* Shelter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shelter.swift; sourceTree = "<group>"; };
+		D919150D2BED0DC600EFE818 /* MSCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSCardView.swift; sourceTree = "<group>"; };
+		D919150F2BED106100EFE818 /* MSTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTagView.swift; sourceTree = "<group>"; };
+		D91915112BED24A500EFE818 /* ShelterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelterDetailsView.swift; sourceTree = "<group>"; };
+		D91915132BED29B400EFE818 /* InformationWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationWebView.swift; sourceTree = "<group>"; };
+		D960F4B32BED521E006346F4 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		D960F4B52BED5272006346F4 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
 		D9CA88CA2BEB1152005B9C34 /* MSAccordion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSAccordion.swift; sourceTree = "<group>"; };
 		D9D48D672BEC13190079E14E /* Mapa Solidário.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Mapa Solidário.entitlements"; sourceTree = "<group>"; };
 		D9E8C6002BEBB04C0063515C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -112,28 +128,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1BDD77B02BEC0FC90085E312 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				1BDD77AE2BEC0FC90085E312 /* HTTPClient.swift */,
-				1BDD77AF2BEC0FC90085E312 /* Service.swift */,
-			);
-			name = Service;
-			path = "Enchente RS/Service";
-			sourceTree = SOURCE_ROOT;
-		};
-		1BDD77B22BEC0FC90085E312 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				1BDD77B12BEC0FC90085E312 /* Shelter.swift */,
-			);
-			name = Model;
-			path = "Enchente RS/Model";
-			sourceTree = SOURCE_ROOT;
-		};
 		798361F92BEAAB900058B4EE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D91915152BED2EC900EFE818 /* Shelter Details */,
 				798361FC2BEAABA40058B4EE /* Information */,
 				798361FB2BEAAB9D0058B4EE /* Signup */,
 				798361FA2BEAAB980058B4EE /* Map */,
@@ -146,6 +144,8 @@
 			children = (
 				D911471E2BE8263C00E5B6CD /* MapsViewController.swift */,
 				798361F72BEAAB780058B4EE /* MapView.swift */,
+				79D399FD2BEC3DD000AE19A3 /* MapViewModel.swift */,
+				79D399FF2BEC509800AE19A3 /* MapItem.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -154,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				D911473D2BE8299700E5B6CD /* SignupView.swift */,
+				D960F4B32BED521E006346F4 /* SignupViewModel.swift */,
+				D960F4B52BED5272006346F4 /* SignupModel.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				798361F52BEAAB500058B4EE /* InformationView.swift */,
+				D91915132BED29B400EFE818 /* InformationWebView.swift */,
 			);
 			path = Information;
 			sourceTree = "<group>";
@@ -190,19 +193,46 @@
 				D91147372BE8268D00E5B6CD /* GoogleMapsPrivacy.bundle */,
 				7922E8302BEAA2BA00BE6826 /* MapaSolidario-Info.plist */,
 				D91147232BE8263D00E5B6CD /* Assets.xcassets */,
-				1BDD77B22BEC0FC90085E312 /* Model */,
-				1BDD77B02BEC0FC90085E312 /* Service */,
 				D9C6AD6F2BEB142100966DCA /* Preview Content */,
 				798361F92BEAAB900058B4EE /* Scenes */,
+				D91915082BECFE1300EFE818 /* Model */,
+				D91915052BECFE1300EFE818 /* Service */,
 				D98F51232BEA5E3800923C97 /* Components */,
 				D911471A2BE8263C00E5B6CD /* MapaSolidariopp.swift */,
 			);
 			path = MapaSolidario;
 			sourceTree = "<group>";
 		};
+		D91915052BECFE1300EFE818 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D91915062BECFE1300EFE818 /* Service.swift */,
+				D91915072BECFE1300EFE818 /* HTTPClient.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D91915082BECFE1300EFE818 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D91915092BECFE1300EFE818 /* Shelter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D91915152BED2EC900EFE818 /* Shelter Details */ = {
+			isa = PBXGroup;
+			children = (
+				D91915112BED24A500EFE818 /* ShelterDetailsView.swift */,
+			);
+			path = "Shelter Details";
+			sourceTree = "<group>";
+		};
 		D98F51232BEA5E3800923C97 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D919150D2BED0DC600EFE818 /* MSCardView.swift */,
+				D919150F2BED106100EFE818 /* MSTagView.swift */,
 				D9CA88CA2BEB1152005B9C34 /* MSAccordion.swift */,
 				D911473B2BE8296200E5B6CD /* MSTabBar.swift */,
 				D9F3ADF02BEA8E3F0001A490 /* MSButtom.swift */,
@@ -351,22 +381,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				D911471F2BE8263C00E5B6CD /* MapsViewController.swift in Sources */,
-				D911473C2BE8296200E5B6CD /* MSTabBar.swift in Sources */,
+				D91915102BED106100EFE818 /* MSTagView.swift in Sources */,
 				798361F82BEAAB780058B4EE /* MapView.swift in Sources */,
+				D919150B2BECFE1300EFE818 /* HTTPClient.swift in Sources */,
+				D91915142BED29B400EFE818 /* InformationWebView.swift in Sources */,
 				798361F62BEAAB500058B4EE /* InformationView.swift in Sources */,
 				D911473E2BE8299700E5B6CD /* SignupView.swift in Sources */,
-				D911473C2BE8296200E5B6CD /* MSTabBar.swift in Sources */,
 				D911471B2BE8263C00E5B6CD /* MapaSolidariopp.swift in Sources */,
-				1BDD77B42BEC0FC90085E312 /* Service.swift in Sources */,
-				1BDD77B52BEC0FC90085E312 /* Shelter.swift in Sources */,
+				D91915122BED24A500EFE818 /* ShelterDetailsView.swift in Sources */,
+				D960F4B42BED521E006346F4 /* SignupViewModel.swift in Sources */,
+				79D39A002BEC509800AE19A3 /* MapItem.swift in Sources */,
+				D960F4B62BED5272006346F4 /* SignupModel.swift in Sources */,
+				D919150E2BED0DC600EFE818 /* MSCardView.swift in Sources */,
+				D919150C2BECFE1300EFE818 /* Shelter.swift in Sources */,
 				D9F3ADEF2BEA871E0001A490 /* MSInput.swift in Sources */,
 				D9CA88CB2BEB1152005B9C34 /* MSAccordion.swift in Sources */,
 				D9F3ADED2BEA78F60001A490 /* MSCheckButton.swift in Sources */,
+				D919150A2BECFE1300EFE818 /* Service.swift in Sources */,
+				79D39A012BEC516300AE19A3 /* MSTabBar.swift in Sources */,
 				D9F3ADE92BEA73F80001A490 /* MSRadioButton.swift in Sources */,
-				1BDD77B32BEC0FC90085E312 /* HTTPClient.swift in Sources */,
 				D9F3ADEB2BEA75900001A490 /* DynamicButton.swift in Sources */,
 				D9F3ADF12BEA8E3F0001A490 /* MSButtom.swift in Sources */,
 				D9F3ADFB2BEA94E80001A490 /* MSTextEditor.swift in Sources */,
+				79D399FE2BEC3DD000AE19A3 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +541,7 @@
 				DEVELOPMENT_TEAM = 2TN8HUUR4R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MapaSolidario-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Para selecionar os pontos de referência";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -517,9 +555,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.mapasolidario;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -535,6 +577,7 @@
 				DEVELOPMENT_TEAM = 2TN8HUUR4R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MapaSolidario-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Para selecionar os pontos de referência";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -548,9 +591,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.mapasolidario;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

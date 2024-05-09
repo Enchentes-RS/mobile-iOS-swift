@@ -31,7 +31,7 @@ class MapsViewController: UIViewController, GMSMapViewDelegate {
     func setupMap() {
         options = GMSMapViewOptions()
         options.camera = GMSCameraPosition.camera(
-            withLatitude:  -30.0277, longitude: -51.2287 , zoom: 16.0)
+            withLatitude:  -30.0277, longitude: -51.2287 , zoom: 50.0)
         options.frame = self.view.bounds
 
         mapView = GMSMapView(options: options)

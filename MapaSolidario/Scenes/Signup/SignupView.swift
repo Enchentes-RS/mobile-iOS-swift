@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import MessageUI
 
 struct SignupView: View {
+    @StateObject var viewModel = SignupViewModel(service: .init())
     @State var localName = ""
     @State var cep = ""
     @State var cnpj = ""
-    @State var placeType: PlaceType = .donations
+    @State var placeType: PointType = .donations
+    @State var isShowingMailView = false
 
     var body: some View {
         ScrollView {
@@ -19,51 +22,53 @@ struct SignupView: View {
                 VStack(alignment: .leading, spacing: 8) {
                     Text("Cadastro de Locais")
                         .font(.title)
-                    .fontWeight(.bold)
+                        .fontWeight(.bold)
 
-                Text("Especifique abaixo o tipo do seu local")
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
+                    Text("Especifique abaixo o tipo do seu local")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
 
-                Text("* Indica pergunta obrigatória")
-                    .font(.caption)
-                    .foregroundColor(.red)
+                    Text("* Indica pergunta obrigatória")
+                        .font(.caption)
+                        .foregroundColor(.red)
                 }
                 .padding(.bottom, 32)
 
                 VStack(spacing: 24) {
                     MSInput(
-                        title: "Nome do Local",
+                        title: "Nome do Local*",
                         placeholder: "Digite o nome do local",
-                        text: $localName
+                        text: $viewModel.signupModel.placeName
                     )
 
                     MSInput(
-                        title: "CEP",
+                        title: "CEP*",
                         placeholder: "Digite o CEP do local",
-                        text: $cep
+                        text: $viewModel.signupModel.cep
                     )
 
                     MSInput(
-                        title: "CNPJ", 
-                        placeholder: "Digite seu CNPJ",
-                        text: $cnpj
+                        title: "CPF*",
+                        placeholder: "Digite seu CPF",
+                        text: $viewModel.signupModel.cpf
                     )
                 }
                 .padding(.bottom, 32)
 
                 VStack(alignment: .leading) {
                     Text("Tipo de ponto*")
+                        .font(.headline)
+                        .foregroundColor(.black)
 
                     MSRadioButton(
                         "Coleta de doações",
                         isSelected: .init(
                             get: {
-                                placeType == .donations
+                                viewModel.signupModel.type == .donations
                             },
                             set: { _ in
-                                if placeType != .donations {
-                                    placeType = .donations
+                                if viewModel.signupModel.type != .donations {
+                                    viewModel.signupModel.type = .donations
                                 }
                             }
                         )
@@ -73,11 +78,11 @@ struct SignupView: View {
                         "Abrigo para voluntários",
                         isSelected: .init(
                             get: {
-                                placeType == .volunteers
+                                viewModel.signupModel.type == .volunteers
                             },
                             set: { _ in
-                                if placeType != .volunteers {
-                                    placeType = .volunteers
+                                if viewModel.signupModel.type != .volunteers {
+                                    viewModel.signupModel.type = .volunteers
                                 }
                             }
                         )
@@ -89,24 +94,44 @@ struct SignupView: View {
                     MSInput(
                         title: "Contato do responsável *",
                         placeholder: "Digite o telefone ou WhatsApp",
-                        text: $localName
+                        text: $viewModel.signupModel.phoneNumber
                     )
 
-                    MSTextEditor("Observações Adicionais", text: $localName)
+                    MSTextEditor(
+                        "Observações Adicionais",
+                        text: $viewModel.signupModel.observations
+                    )
+
+                    MSButton(
+                        "Enviar",
+                             type: isDisableButton ? .disable : .primary
+                    ) {
+                        if !isDisableButton {
+                            viewModel.sendEmail()
+                        }
+                    }
                 }
+            }
+            .sheet(isPresented: $isShowingMailView) {
+                //                ContentView()
             }
             .padding(.horizontal, 16)
         }
-        .background(Color.CaribbeanGreen.background)
+        .background(Color.CaribbeanGreen.background.ignoresSafeArea())
     }
 }
 
-enum PlaceType{
-    case volunteers
-    case donations
+extension SignupView {
+
+    var isDisableButton: Bool {
+        return viewModel.signupModel.placeName.isEmpty
+        || viewModel.signupModel.cep.isEmpty
+        || viewModel.signupModel.cpf.isEmpty
+        || viewModel.signupModel.phoneNumber.isEmpty
+        || viewModel.signupModel.observations.isEmpty
+    }
 }
 
 #Preview {
     SignupView()
 }
-

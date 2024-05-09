@@ -10,19 +10,75 @@ import GoogleMaps
 
 struct MapView: View {
 
+    @StateObject var viewModel = MapViewModel(service: .init())
+    @State var isShowingError = false
+    @State var itemSelected: Shelter?
+    @State var isDetailsVisible = false
+
     var body: some View {
-        ZStack {
-            _GoogleMapsViewWrapper(
-                position: GMSCameraPosition.camera(
-                    withLatitude:  -30.0277,
-                    longitude: -51.2287 ,
-                    zoom: 16.0
-                ),
-                onTap: { marker in
-                    return false
+        NavigationView {
+            ZStack(alignment: .bottom) {
+                _GoogleMapsViewWrapper(
+                    position: GMSCameraPosition.camera(
+                        withLatitude:  -23.5505199,
+                        longitude: -46.6333094,
+                        zoom: 16.0
+                    ),
+                    markers: viewModel.items.map(\.marker),
+                    onTap: { marker in
+                        itemSelected = marker.userData as? Shelter
+                        return false
+                    }
+                )
+                .ignoresSafeArea(edges: .top)
+
+                if viewModel.isItemsLoading {
+                    // TODO: - Loading
+                    Rectangle()
+                        .fill(.clear)
+                        .overlay(Text("Carregando"))
+                }
+
+                if itemSelected != nil {
+                    // TODO: - Lista de markers
+                }
+
+                if let itemSelected {
+                    NavigationLink(
+                        destination: ShelterDetailsView(shelter: itemSelected),
+                        isActive: $isDetailsVisible,
+                        label: {
+                            EmptyView()
+                        }
+                    )
+                    .hidden()
+                }
+
+                if itemSelected != nil {
+                    MSCardView(itemSelected: itemSelected!, close: { itemSelected = nil })
+                        .onTapGesture {
+                            isDetailsVisible.toggle()
+                        }
+                        .padding(.all, 16)
+                }
+            }
+            .onAppear {
+                if viewModel.items.isEmpty || viewModel.error != nil {
+                    viewModel.loadItemsSubject.send(())
+                }
+            }
+            .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
+            .alert(
+                isPresented: $isShowingError,
+                content: {
+                    Alert(
+                        title: Text("Ocorreu um erro"),
+                        message: Text("Ocorreu um erro durante o carregamento das informações"),
+                        dismissButton: .cancel()
+                    )
                 }
             )
-            .ignoresSafeArea(edges: .top)
         }
     }
 }
@@ -64,6 +120,10 @@ private struct _GoogleMapsViewWrapper: UIViewRepresentable {
 
         func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
             tapHandler?(marker) ?? false
+        }
+
+        func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
+            UIView()
         }
     }
 }
